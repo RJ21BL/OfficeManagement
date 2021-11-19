@@ -1,8 +1,8 @@
 describe('Office', function() {
-  // var office;
-  // var room1;
-  // var room2;
-  // var room3;
+  var office;
+  var room1;
+  var room2;
+  var room3;
 
   beforeEach(function() {
     office = new Office();
