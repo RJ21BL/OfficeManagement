@@ -14,4 +14,8 @@ describe('Office', function() {
   it('has no meeting room in the office by default', function() {
     expect(office.listRooms()).toEqual([]);
   });
+  it('can add rooms to the office', function() {
+    office.addRooms(room1);
+    expect(office.listRooms()).toEqual([room1]);
+  });
 });

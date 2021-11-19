@@ -5,4 +5,8 @@ class Office {
   listRooms() {
     return this._rooms;
   }
+  addRooms(room) {
+    this.listRooms().push(room)
+    console.log(this.listRooms())
+  }
 }
