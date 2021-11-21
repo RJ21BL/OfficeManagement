@@ -9,4 +9,7 @@ class Office {
     this.listRooms().push(room)
     console.log(this.listRooms())
   }
+  availability() {
+    return this._rooms.filter(room => room.roomStatus() === true)
+  }
 }

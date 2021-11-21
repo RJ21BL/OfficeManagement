@@ -18,4 +18,12 @@ describe('Office', function() {
     office.addRooms(room1);
     expect(office.listRooms()).toEqual([room1]);
   });
+  it('shows availability', function() {
+    office.addRooms(room1);
+    office.addRooms(room2);
+    office.addRooms(room3);
+    room1.enterRoom();
+    expect(office.availability()).toEqual([room2, room3]);
+    
+  })
 });
